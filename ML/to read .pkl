@@ -1,0 +1,4 @@
+import pickle
+with open('C:/Users/yusuk/Desktop/Y/waseda/研究室/留学/tasks/classes/collective/ML/DD-Net-master/DD-Net-master/data/JHMDB/GT_train_1.pkl', 'rb') as web:
+  techacademy = pickle.load(web)
+  print(techacademy)
