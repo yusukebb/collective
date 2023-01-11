@@ -219,7 +219,7 @@ if __name__ == "__main__":
 	test['pose'] = []
 	test['label'] = []
 
-	label = input('what is a name of label')
+	label = input('what is a name of label\n')
 
 	for i in range(mmm):
 		test['pose'].append(rere[i])
@@ -227,10 +227,10 @@ if __name__ == "__main__":
 
 
 
-	with open('modofi.p', 'wb') as ff:
+	with open('modofi.pkl', 'wb') as ff:
 		pickle.dump(test,ff)
 
-	with open('modofi.p', 'rb') as ff:
+	with open('modofi.pkl', 'rb') as ff:
 		d2 = pickle.load(ff)
 
 		data_text = open('data/modified2.txt', 'w', encoding='utf-8', newline='\n')
